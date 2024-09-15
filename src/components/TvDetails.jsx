@@ -123,15 +123,13 @@ const TvDetails = () => {
           <div className="flex gap-x-10 items-center text-white">
             <h1>Available on Platfotms</h1>
             {info.watchproviders.flatrate.map((w, i) => (
-              <a target="_blank" href={info.detail.homepage}>
-                <img
-                  key={i}
-                  title={w.provider_name}
-                  className="w-[5vh] h-[5vh] object-cover rounded-md"
-                  src={`https://image.tmdb.org/t/p/original/${w.logo_path}`}
-                  alt=""
-                />
-              </a>
+              <img
+                key={i}
+                title={w.provider_name}
+                className="w-[5vh] h-[5vh] object-cover rounded-md"
+                src={`https://image.tmdb.org/t/p/original/${w.logo_path}`}
+                alt=""
+              />
             ))}
           </div>
         )}
